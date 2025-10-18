@@ -27,6 +27,39 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+  .portfolio-details-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Keep 4:3 ratio automatically */
+  .portfolio-details-slider .swiper-slide {
+    position: relative;
+    aspect-ratio: 4 / 3; /* modern browsers support this */
+  }
+
+  .portfolio-details-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* shows full image without cropping */
+    background-color: #f8f8f8; /* soft background for padding gaps */
+  }
+
+  /* Make it smaller on mobile */
+  @media (max-width: 768px) {
+    .portfolio-details-slider {
+      max-width: 100%;
+    }
+    .portfolio-details-slider .swiper-slide {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>
+
   <!-- =======================================================
   * Template Name: MyResume
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -98,15 +131,19 @@
             </div>
 
             <div class="swiper-slide">
-              <img src="assets\img\masonry-portfolio\g2.jpg" alt="">
+              <img src="assets\img\masonry-portfolio\Gbox front.png" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets\img\masonry-portfolio\g3.jpg" alt="">
+              <img src="assets\img\masonry-portfolio\Gbox uncovered.png" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets\img\masonry-portfolio\g4.png" alt="">
+              <img src="assets\img\masonry-portfolio\Gbox in back.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets\img\masonry-portfolio\Gbox exploded view.png" alt="">
             </div>
 
           </div>
@@ -121,8 +158,9 @@
             <div class="portfolio-description">
               <h2> Sliding Mesh Gearbox design for a Corn Shredder</h2>
               <p>
-                Currently designing a sliding mesh gearbox with three forward and one reverse gear for a corn shredding machine, addressing challenges identified in Monaragala’s corn cultivating areas. After thoroughly researching the requirements and technical aspects of how gearbox systems operate, we developed the initial concepts and concluded on the most suitable type of gearbox for this application. Detailed calculations for the gearbox system have been completed, and my contributions include gear calculations, material selection, and calculations for other subcomponents such as bearings and the lever system. The 3D modeling phase using SolidEdge and SolidWorks is planned next.
-              </p>
+                Designed and developed a sliding mesh gearbox with three forward and one reverse gear for a corn shredding machine, addressing key challenges faced in Monaragala’s corn cultivation process.
+Conducted in-depth research on gearbox systems to determine the most suitable configuration for the application. Performed detailed design calculations for keys, bearings, lever and sliding fork mechanisms, lubrication system, sprockets and chain drive, overall efficiency, and gearbox housing.
+Contributed original design concepts for both the internal structure and external housing of the gearbox. Utilized Solid Edge to model the complete gearbox assembly, including the housing, full gear-shifting mechanism, bearings, several gears, and multiple precision subcomponents. Completed comprehensive design verification to ensure manufacturability and reliable performance under load. </p>
               
             </div>
           </div>
@@ -131,7 +169,7 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>5th Semester Project</strong> Ongoing</li>
+                <li><strong>5th Semester Project</strong> </li>
                 <li><strong>Team</strong>
                         Tharindu Jayasundara<br>
                         Wasana Abesekara<br>
